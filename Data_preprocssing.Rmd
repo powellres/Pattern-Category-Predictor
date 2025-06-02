@@ -1,0 +1,44 @@
+---
+title: "Data Preprocessing"
+output: html_document
+date: "2025-03-04"
+---
+
+```{r}
+library(tidyverse)
+library(jsonlite)
+library(ravelRy)
+```
+
+
+
+```{r}
+n = 5
+
+for(i in 1:n){
+  page <- search_patterns(query = '',page_size = 100,page = i)
+  if(i == 1){
+    patterns <- page$id
+  } else{
+    patterns <- c(patterns, page$id)
+  }
+}
+
+
+```
+
+```{r}
+
+N = length(patterns)/10
+
+for(i in 1:N){
+  
+}
+
+```
+
+
+```{r}
+
+```
+
